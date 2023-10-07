@@ -25,8 +25,12 @@ export default CourseCard;
 function CourseCardBody({ description, title, tag, start }) {
   return (
     <div className="description_course">
-      <h2 className="title">{title}</h2>
-      <p className="desc">{description}</p>
+      <h2 title={title} className="title">
+        {title}
+      </h2>
+      <p title={description} className="desc">
+        {description}
+      </p>
       <div>
         <button className="btn-course">{tag}</button>
       </div>
@@ -47,10 +51,20 @@ function CourseCardFooter({ course }) {
   return (
     <div className="course-rate">
       <div className="rate">
-        <span>{course.rate}</span>
+        <span>⭐ {course.rate}</span>
       </div>
       <div>
-        <button className="btn-rate">{course.status}</button>
+        <button
+          className={`btn ${
+            course.status === "Active"
+              ? "primary"
+              : course.status === "UpComming"
+              ? "danger"
+              : "secondary"
+          }`}
+        >
+          {course.status}
+        </button>
       </div>
     </div>
   );

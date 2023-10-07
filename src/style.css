@@ -94,13 +94,23 @@ body {
   justify-content: center;
   margin-right: 1.5rem;
 }
-.btn-rate {
+.btn {
   outline: none;
   border: none;
-  background-color: rgb(220, 245, 245);
-  color: rgb(15, 15, 167);
   padding: 0.3rem;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 700;
+}
+.primary {
+  background-color: rgb(220, 245, 245);
+  color: rgb(15, 15, 167);
+}
+.secondary {
+  background-color: rgb(169, 245, 176);
+  color: rgb(0, 83, 22);
+}
+.danger{
+  background-color: rgb(241, 181, 181);
+  color: rgb(151, 18, 18);
 }
