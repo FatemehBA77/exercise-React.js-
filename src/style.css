@@ -110,7 +110,26 @@ body {
   background-color: rgb(169, 245, 176);
   color: rgb(0, 83, 22);
 }
-.danger{
+.danger {
   background-color: rgb(241, 181, 181);
   color: rgb(151, 18, 18);
+}
+.course-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+.course-title .active {
+  font-weight: 700;
+  color: rgb(57, 56, 56);
+  background-color: rgb(251, 251, 251);
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+.footer {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }

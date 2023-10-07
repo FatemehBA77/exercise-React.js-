@@ -1,9 +1,12 @@
 import CourseList from "./components/CourseList";
+import Hearder from "./components/Headers";
+import Footer from "./components/Footer";
 export default function App() {
   return (
     <div>
-      <h1 className="title__header">My Course</h1>
+      <Hearder />
       <CourseList />
+      <Footer />
     </div>
   );
 }
